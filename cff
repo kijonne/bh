@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текст и изображение</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .text-content {
+            flex: 1;
+        }
+        
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .text-content, .image-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <h1>Заголовок текста</h1>
+            <p>Это пример текста, который расположен слева на странице. Здесь может быть любая информация, которую вы хотите представить посетителям вашего сайта.</p>
+            <p>Вы можете добавить несколько абзацев, списки или другие HTML-элементы по вашему усмотрению. Этот макет адаптируется под разные размеры экранов.</p>
+            <p>При уменьшении экрана до мобильного размера текст и изображение будут располагаться друг под другом для удобства просмотра.</p>
+        </div>
+        <div class="image-content">
+            <img src="https://via.placeholder.com/600x400" alt="Пример изображения">
+            <!-- Замените ссылку выше на путь к вашему изображению -->
+        </div>
+    </div>
+</body>
+</html>

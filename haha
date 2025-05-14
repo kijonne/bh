@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отели в Страсбурге</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .hotel-container {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+            gap: 20px;
+        }
+        
+        .hotel-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .hotel-info {
+            flex: 1;
+        }
+        
+        .hotel-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .stars {
+            color: #FFD700;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        .city {
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .description {
+            margin-bottom: 10px;
+        }
+        
+        .viewers {
+            font-style: italic;
+            color: #666;
+        }
+        
+        .more-info {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #0066cc;
+            cursor: pointer;
+        }
+        
+        .last-booking {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .rating-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .rating {
+            font-weight: bold;
+        }
+        
+        .show-prices {
+            display: inline-block;
+            background-color: #0066cc;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .show-prices:hover {
+            background-color: #0052a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="hotel-container">
+        <img src="https://via.placeholder.com/200x150?text=Citadines+Kleber" alt="Citadines Kléber Strasbourg" class="hotel-image">
+        <div class="hotel-info">
+            <div class="hotel-name">Citadines Kléber Strasbourg</div>
+            <div class="stars">★★★</div>
+            <div class="city">Страсбург</div>
+            <div class="description">
+                Апарт-отель Citadines расположен рядом с площадью Клебера, всего в 10 минутах ходьбы от железнодорожного вокзала Страсбурга SNCF. До апартаментов можно подняться на лифте.
+            </div>
+            <div class="viewers">Сейчас 6 пользователей просматривают этот апарт-отель.</div>
+            <div class="more-info">дополнительная информация</div>
+            <div class="last-booking">Последнее бронирование: 24 минуты назад</div>
+        </div>
+    </div>
+    
+    <div class="rating-container">
+        <div class="rating">
+            <div>Хорошо 7,7</div>
+            <div>Оценка по 601 отзыву</div>
+        </div>
+        <a href="#" class="show-prices">Показать цены</a>
+    </div>
+    
+    <div class="hotel-container">
+        <img src="https://via.placeholder.com/200x150?text=Lagrange+City" alt="Lagrange City Strasbourg" class="hotel-image">
+        <div class="hotel-info">
+            <div class="hotel-name">Lagrange City Strasbourg</div>
+            <div class="stars">★★★★</div>
+            <div class="city">Страсбург</div>
+            <div class="description">
+                Отель Lagrange City de Strasbourg находится в 5 минутах от железнодорожного вокзала и в 15 минутах ходьбы от очаровательного района Маленькая Франция.
+            </div>
+            <div class="viewers">Сейчас 6 пользователей просматривают этот апарт-отель.</div>
+            <div class="more-info">дополнительная информация</div>
+            <div class="last-booking">Последнее бронирование: 2 часа назад</div>
+        </div>
+    </div>
+    
+    <div class="rating-container">
+        <div class="rating">
+            <div>Очень хорошо 8,2</div>
+            <div>Оценка по 1127 отзывам</div>
+        </div>
+        <a href="#" class="show-prices">Показать цены</a>
+    </div>
+    
+    <div class="hotel-container">
+        <img src="https://via.placeholder.com/200x150?text=Adagio+Petite+France" alt="Adagio Access Strasbourg Petite France" class="hotel-image">
+        <div class="hotel-info">
+            <div class="hotel-name">Adagio Access Strasbourg Petite France</div>
+            <div class="stars">★★★</div>
+            <div class="city">Страсбург</div>
+            <div class="description">
+                Апарт-отель с круглосуточной стойкой регистрации находится в центре города, всего в 1,5 км от Страсбургского собора.
+            </div>
+            <div class="viewers">Сейчас 2 пользователя просматривают этот апарт-отель.</div>
+            <div class="more-info">дополнительная информация</div>
+            <div class="last-booking">Последнее бронирование: 1 час назад</div>
+        </div>
+    </div>
+    
+    <div class="rating-container">
+        <div class="rating">
+            <div>Очень хорошо 8,1</div>
+            <div>Оценка по 1503 отзывам</div>
+        </div>
+        <a href="#" class="show-prices">Показать цены</a>
+    </div>
+</body>
+</html>

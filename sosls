@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор сдачи</title>
+    <style>
+        .insufficient {
+            color: red;
+        }
+        .change {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Генерируем случайную сумму покупки от 10 до 1000
+        let purchaseAmount = Math.floor(Math.random() * 991) + 10;
+        
+        // Показываем пользователю сумму покупки
+        alert("Сумма покупки: " + purchaseAmount + " рублей");
+        
+        // Запрашиваем сумму оплаты
+        let payment = parseFloat(prompt("Введите сумму оплаты:"));
+        
+        // Проверяем, достаточно ли денег
+        if (payment < purchaseAmount) {
+            let shortage = purchaseAmount - payment;
+            document.write('<p class="insufficient">Недостаточно средств. Не хватает: ' + shortage + ' рублей</p>');
+        } else if (payment > purchaseAmount) {
+            let change = payment - purchaseAmount;
+            document.write('<p class="change">Ваша сдача: ' + change + ' рублей</p>');
+        } else {
+            document.write('<p>Спасибо! Оплата прошла без сдачи.</p>');
+        }
+    </script>
+</body>
+</html>

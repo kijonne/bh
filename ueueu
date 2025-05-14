@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблица 2x2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 200px;
+            height: 200px;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Создаем таблицу 2x2
+        document.write("<table>");
+        document.write("<tr><td>Ячейка 1</td><td>Ячейка 2</td></tr>");
+        document.write("<tr><td>Ячейка 3</td><td>Ячейка 4</td></tr>");
+        document.write("</table>");
+    </script>
+</body>
+</html>
